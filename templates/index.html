@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<p> Welcome to my blog! Enjoy.</p>
+{% for page in pages %}
+<a href="{{ page.path }}.html"> {{page.date }} {{ page.title  }}</a>
+<br />
+{% endfor %}
+{% endblock %}
+
