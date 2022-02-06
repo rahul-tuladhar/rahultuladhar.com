@@ -2,9 +2,9 @@
 
 {% block content %}
 
-<p> Welcome to my blog! Enjoy.</p>
+<p> I'm a software engineer in the Washington DC area. More information can be found in my <a href="https://www.linkedin.com/in/rahul-tuladhar">LinkedIn</a>. </p>
 {% for page in pages %}
-<a href="{{ page.path }}.html"> {{page.date }} {{ page.title  }}</a>
+{{ page.date }} <a href="{{ page.path }}.html"> {{ page.title }}</a>
 <br />
 {% endfor %}
 {% endblock %}

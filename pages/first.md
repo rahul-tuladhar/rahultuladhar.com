@@ -1,7 +1,6 @@
-title: My First Blog
-date: 2020-02-23
-category: general
-
+title: How to Set Up a Static Site on Render.com
+date: 2022-02-06
+category: Programming
 
 Here is some content for this blog. Written in Markdown.
 
