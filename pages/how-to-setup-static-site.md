@@ -22,11 +22,13 @@ After selecting your repo, you can input some information for your static site s
 Make sure in the `Publish directory` field you input  `./build` as the directory which has your generated static files. I left the rest of the values in the fields on that page with their defaults (besides the Custom Domain). Render.com automatically provides a URL for your static site even if you don't have your own domain. The URL should look something like `static-site-name.onrender.com`. You will be able to access the URL after hitting the `Create Static Site` button at the bottom of the deploy static site page.
 
 ### Custom Domains
+
 If you want to specify your own custom domain, you can add that after first createing the static site and seeing it run live on your dashboard. You can click on your service in the list of services. If you go to the `Settings` tab for your service you can see a few options similar to when you first configured your static site to be created. 
 
 Under Custom Domains, you will be able to configure settings to point your custom domain to your newly created static site. You can follow Render's own guidelines on [Custom Domains](https://render.com/docs/custom-domains). Essentially, whereever you may purchase your domain, you can specify in their DNS settings custom records pointing to the services that domain will use. In our case, we want to have a type A record to pointing to the specific IP from Render's docs: `216.24.57.1`. In addition, you would also want to set the type CNAME record to point to your `*.onrender.com` URL.
 
 ## Resources
-[1]: https://github.com/akprasad/arunkprasad.com \
-[2]: https://vkaustubh.github.io/blog/geek/2020-02-23-blogging-with-flask.html \
+
+[1]: https://github.com/akprasad/arunkprasad.com 
+[2]: https://vkaustubh.github.io/blog/geek/2020-02-23-blogging-with-flask.html
 [3]: https://testdriven.io/blog/static-site-flask-and-netlify/
