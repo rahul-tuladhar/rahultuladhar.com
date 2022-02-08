@@ -3,8 +3,7 @@ import sys
 from flask import Flask, render_template, url_for
 from flask_flatpages import FlatPages
 from flask_frozen import Freezer
-# 
-# 
+
 DEBUG = True
 FLATPAGES_AUTO_RELOAD = DEBUG
 FLATPAGES_EXTENSION = '.md'
@@ -17,7 +16,6 @@ freezer = Freezer(app)
 @app.route('/')
 def index():
     return render_template('index.html', pages=pages)
-
 
 @app.route('/<path:path>.html')
 def page(path):
