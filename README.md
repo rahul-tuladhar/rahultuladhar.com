@@ -31,3 +31,4 @@ More information can be found on [this post](https://rahultuladhar.com/how-to-se
 - https://github.com/akprasad/arunkprasad.com 
 - https://vkaustubh.github.io/blog/geek/2020-02-23-blogging-with-flask.html
 - https://testdriven.io/blog/static-site-flask-and-netlify/
+- https://github.com/xz/new.css
