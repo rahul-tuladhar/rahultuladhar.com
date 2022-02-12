@@ -1,6 +1,7 @@
-title: Listening To Your Body
+title: Listen To Your Body
 date: 2022-02-11
 category: General
+
 
 Listen to your body. This seems like a simple phrase but it really has wide implication on my day to day life. There have been plenty of times where this phrase has been disregarded.
 
@@ -11,5 +12,3 @@ Being young affords you a certain tangible sense of energy. Your physical body s
 Things only got worse during university. It always seemed like I was playing catch up the last time I dubiously stayed up to 4am to go "study" at the library with my friends but instead managed to find myself ordering a $5 tray of goodies at the nearest Cookout. On the nights before exams, I often would find myself desperately trying to stay awake through sheer will alone. Like slogging through a dense mud in the middle of a hazy marsh, each moment felt both long and short. In the most extreme case it felt like temporary psychosis. 
 
 Thankfully, old habits do die hard sometimes. In the past 2.7 years working as a software engineer, I've had the fortune to never even come close to an allnighter. While there have been close calls debugging code into the late(TM) night it is much easier to maintain some semblance of a sleep schedule. The 9-5 life affords a few good hours to maintaining your body. Especially with the work from home situation these past two years, paying attention to my body has never been so high priority. I reflect back on my past struggles as a student and wonder how I even made it out in one piece. Was it worth it to sacrifice physical and mental wellbeing? Did I really come out the other end better?
-   
-
