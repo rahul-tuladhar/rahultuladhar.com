@@ -6,3 +6,4 @@ hub_config/jupyterhub_cookie_secret
 *.pyc
 *pycache*
 drafts/*
+books/*
