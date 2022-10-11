@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+<link rel="stylesheet" href="https://newcss.net/theme/night.css"> 
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Tuladhar</title>
+</head>
+<body>
+    <header>
+        <h1>Rahul Tuladhar</h1>
+        <nav>
+            <a href="https://rahultuladhar.com">Home</a> /
+            <a href="https://drive.google.com/file/d/1HK4LA5Jk5Ywrle1xxQh_Gr9cmbLvQsx2/view?usp=sharing">Resume</a> /
+            <a href="https://github.com/rahul-tuladhar">GitHub</a> / 
+            <a href="https://linkedin.com/in/rahul-tuladhar">LinkedIn</a>
+        </nav>
+    </header>
+    
+
+<h1> How to Set Up a Static Site Using Flask and HTML on Render.com </h1>
+<small> Published on Sunday, 06 February, 2022 </small>
+<br>
+<h2>Introduction</h2>
+<p>This is simple post about how to set up a static site using Python and Flask. </p>
+<p>Most of the code can be found from <a href="https://vkaustubh.github.io/blog/geek/2020-02-23-blogging-with-flask.html">this blog post by Kaustubh Vaghmare</a>. I found this blog post to be sufficiently detailed enough to get up and running with Flask. </p>
+<p>The flask app he calls <code>sitebuilder.py</code> builds static <code>.html</code> files which can be hosted on a fair number of free hosting sites such as <a href="https://www.render.com">Render.com</a>. </p>
+<h3>Hosting on Render.com</h3>
+<p>After running through the code and building the <code>sitebuilder.py</code> aka <code>app.py</code> you have a working simple static site generator. To make the site accessible on the internet you use a hosting site such as render to host those static <code>.html</code> files created and stored in the <code>/build</code> directory.</p>
+<p>After creating an account and logging into render you will be presented with a dashboard which will be the place where you can see your deployed services. The services we will be deploying will be for a new static site. You can use the <code>New +</code> <a href="https://dashboard.render.com/select-repo?type=static">button</a> on the navbar and select <code>Static Site</code>. </p>
+<p>If you have logged into Render.com through your github.com account you will be able to see that reflected in the next screen. You would then be able to give permission to render to view some or all of the repositories in your github account. If you have your project saved up on github already, then you can see the repo name as a possible item to be selected. </p>
+<p>After selecting your repo, you can input some information for your static site service. For your <code>Build Command</code> you can input the same build command to build your <code>.html</code> files locally: <code>python &lt;flask_app_file_name.py&gt; build</code>. In my case I put <code>python app.py build</code>. </p>
+<p>Make sure in the <code>Publish directory</code> field you input  <code>./build</code> as the directory which has your generated static files. I left the rest of the values in the fields on that page with their defaults (besides the Custom Domain). Render.com automatically provides a URL for your static site even if you don't have your own domain. The URL should look something like <code>static-site-name.onrender.com</code>. You will be able to access the URL after hitting the <code>Create Static Site</code> button at the bottom of the deploy static site page.</p>
+<h3>Custom Domains</h3>
+<p>If you want to specify your own custom domain, you can add that after first createing the static site and seeing it run live on your dashboard. You can click on your service in the list of services. If you go to the <code>Settings</code> tab for your service you can see a few options similar to when you first configured your static site to be created. </p>
+<p>Under Custom Domains, you will be able to configure settings to point your custom domain to your newly created static site. You can follow Render's own guidelines on <a href="https://render.com/docs/custom-domains">Custom Domains</a>. Essentially, whereever you may purchase your domain, you can specify in their DNS settings custom records pointing to the services that domain will use. In our case, we want to have a type A record to pointing to the specific IP from Render's docs: <code>216.24.57.1</code>. In addition, you would also want to set the type CNAME record to point to your <code>*.onrender.com</code> URL.</p>
+<h2>Resources</h2>
+
+
+</body>
+</html>
